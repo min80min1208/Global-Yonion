@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+        }
+        a {
+            color:black;
+            text-decoration: none;
+        }
+        h1 {
+            font-size:40px;
+            text-align: center;
+            border-bottom: 1px solid black;
+            margin:0;
+            padding: 17px;
+        }
+        ol {
+            border-right: 1px solid black;
+            width: 120px;
+            margin:0;
+            padding: 15px;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #grid ol{
+            padding-left: 33px;
+            line-height: 170%;
+            font-weight: bold;
+        }
+        #article{
+            padding-left: 30px;
+            padding-right:20px;
+        }
+        @media(max-width: 700px){
+            #grid{
+            display: block;
+        }
+            ol {
+            border-right: none;
+        }
+            h1 {
+            border-bottom: none;
+        }
+        }
+
+    </style>
+    <title>GLOBAL YONION</title>
+</head>
+
+<body>
+    <h1><a href="welcome.html">Welcome! We're GLOBAL YONION 👋🏻 </a></h1>
+    <div id="grid">
+        <ol>
+            <li><a href="introduction.html" target="_blank">INTRODUCTION</a></li>
+            <li><a href="items.html" target="_blank">ITEMS</a></li>
+            <li><a href="howto.html" target="_blank">HOW TO SELL</a></li>
+            <li><a href="reviews.html" target="_blank">REVIEWS</a></li>
+            <li><a href="qna.html" target="_blank">QnA</a></li>
+        </ol>
+
+        <div id="article">
+            <p>
+                <img src= "yonsei university.jpeg" width="100%">
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
